@@ -1,0 +1,46 @@
+{
+  "name": "@padcom/mf-test-library2",
+  "version": "0.0.2-beta.0",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "keywords": [
+    "microfrontend",
+    "microfrontends",
+    "example"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-example/tree/master/library2"
+  },
+  "bugs": {
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-test/issues"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/padcom"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run build:watch' 'npm run serve'",
+    "build": "rollup -c",
+    "build:watch": "npm run build -- -w",
+    "serve": "npm-serve -C -p 3002 dist",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "@padcom/npm-serve": "^2.8.0",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "concurrently": "^7.3.0",
+    "rollup": "^2.77.0",
+    "rollup-plugin-jsx": "^1.0.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

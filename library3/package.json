@@ -1,0 +1,42 @@
+{
+  "name": "@padcom/mf-test-library3",
+  "version": "0.0.2",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "keywords": [
+    "microfrontend",
+    "microfrontends",
+    "example"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-example/tree/master/library3"
+  },
+  "bugs": {
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-test/issues"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/padcom"
+  },
+  "scripts": {
+    "start": "concurrently 'npm run build -- -w' 'npm run serve'",
+    "build": "vite build",
+    "serve": "npm-serve -C -p 3003 dist",
+    "prepublishOnly": "npm install && npm run build"
+  },
+  "dependencies": {
+    "vue": "3.2.35"
+  },
+  "devDependencies": {
+    "@padcom/npm-serve": "^2.8.0",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "concurrently": "^7.3.0",
+    "vite": "^3.0.0"
+  }
+}
