@@ -1,0 +1,31 @@
+{
+  "name": "@padcom/mf-test-host",
+  "version": "0.0.7",
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.html",
+  "keywords": [
+    "microfrontend",
+    "microfrontends",
+    "example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-example/tree/master/library7"
+  },
+  "bugs": {
+    "url": "https://github.com/padcom/importmap-vue3-react-mf-test/issues"
+  },
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/padcom"
+  },
+  "scripts": {
+    "start": "npm-serve",
+    "prepublishOnly": "npm install"
+  },
+  "dependencies": {
+    "@padcom/npm-serve": "^0.0.7"
+  }
+}
