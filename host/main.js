@@ -83,7 +83,7 @@ async function main() {
   console.time('[HOST] System initialized.')
   await sleep(5000, '[HOST] System initialization started - waiting 5 seconds...')
 
-  const CDN = '/package/'
+  const CDN = 'https://unpkg.com/'
 
   await Promise.all([
     start(document.getElementById('app1'), CDN + '@padcom/mf-test-library1'),

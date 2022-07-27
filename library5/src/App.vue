@@ -22,11 +22,11 @@ export default {
   },
   methods: {
     testme() {
-      console.log('[LIBRARY5] App.methods.testme(); Dispatching StartMicrofrontendEvent request for library7 from unpkg.com')
+      console.log('[LIBRARY5] App.methods.testme(); Dispatching StartMicrofrontendEvent request for library6 from unpkg.com')
       window.dispatchEvent(new events.StartMicrofrontendEvent(
         '#app6',
-        'https://unpkg.com/@padcom/mf-test-library7/dist/index.js',
-        'https://unpkg.com/@padcom/mf-test-library7/dist/style.css'
+        'https://unpkg.com/@padcom/mf-test-library6',
+        'https://unpkg.com/@padcom/mf-test-library6/dist/style.css'
       ))
     }
   }
